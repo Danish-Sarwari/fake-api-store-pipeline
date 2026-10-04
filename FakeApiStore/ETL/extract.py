@@ -27,10 +27,5 @@ def fetch_carts_data():
 
     return response.json()
 
-
-# NOTE: removed `print(fetch_carts_data())` that used to sit here.
-# It fired a live network request every time this module was *imported*
-# (e.g. from main.py), which is a side effect a module should never have.
-# If you want to test this file directly, use the block below instead:
 if __name__ == "__main__":
     print(fetch_carts_data())

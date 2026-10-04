@@ -16,7 +16,6 @@ def tranform_products(raw_data):
         }
     )
 
-    # Flatten rating dictionary (rate, count)
     if "rating" in df.columns:
         df["rating_rate"] = df["rating"].apply(
             lambda x: x.get('rate') if isinstance(x, dict) else None
@@ -36,8 +35,6 @@ def tranform_products(raw_data):
         "product_category", "rating_rate", "rating_count"
     ]
 
-    # FIX: was df["selected_cols"] (a literal string -> KeyError).
-    # Needed df[selected_cols] to select using the list of column names.
     return df[selected_cols]
 
 

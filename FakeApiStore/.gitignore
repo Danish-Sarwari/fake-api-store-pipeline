@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables (Sensitive Data)
+.env
+
+# Virtual environment (Agar ho toh)
+venv/
+.venv/
+env/

@@ -75,7 +75,7 @@ Clone the repository and install the required dependencies:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/fakestore-etl-pipeline.git
+git clone https://github.com/Danish-Sarwari/fake-api-store-pipeline.git
 cd fakestore-etl-pipeline
 
 # Create a virtual environment (optional but recommended)
